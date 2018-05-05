@@ -1,0 +1,1197 @@
+/*
+Theme Name: digitaldestroyers
+Author: Digital Destroyers
+Description: Theme for Health and Beauty website.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Flamenco:300,400|Inconsolata:400,700|Lobster');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;	
+}
+
+
+.logo{
+	height: 70vh;
+	padding: 15vh 50px;
+}
+
+.logo .img1{
+	width: 60%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	transition: all 0.8s;
+}
+
+.logo .img2{
+	width: 35%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	transition: all 0.8s;
+}
+
+.sticky .logo{
+	height: 10vh;
+	padding: 2.5vh 0;
+}
+
+.sticky .logo .img1{
+	width: 28%;
+	padding: 0 100px;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	transition: all 0.8s;
+}
+
+.sticky .logo .img2{
+	display: none;
+}
+
+
+	
+header{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background: white;
+	line-height: 1;
+	transition: all 0.8s;
+	z-index: 100;
+}
+
+.sticky{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 15vh;
+	transition: all 0.8s;
+}
+
+header h1{
+	padding-top: 0;
+	margin: 0;
+}
+
+header a{
+	text-decoration: none;
+	color: black;
+}
+
+header nav{
+	
+  	width: 100%;
+  	height:100vh;
+  	position: fixed;
+  	transition: width 1s;
+  	visibility: hidden;
+    	opacity: 0;
+	z-index: 2;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	background-size: auto;
+	transition: all 1s;
+}
+
+.nav-menu{
+	width: 250px;
+	height: 100vh;
+	padding: 10px 0;
+	background: white;
+	transform: translate(-20vw,0vh);
+	transition: all 1s;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+}
+
+.menu-visible .nav-menu{
+	transform: translate(0vw,0vh);
+	opacity: 1;
+	transition: all 1s;
+}
+
+.menu-visible 
+{
+	visibility: visible;
+	transform: translate(0vw,0vh);
+        opacity: 1;
+	transition: all 1s;
+}
+
+.icon-menu,.icon-cross{
+	font-size: 2rem;
+}
+
+.icon-menu{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	padding: 5px;
+	position: fixed;
+	border: 1px solid black;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-cross{
+	position: absolute;
+	left: 20px;
+}
+
+nav span{
+	font-size: 2rem;
+	position: absolute;
+	right: 30px;
+	font-family: "Inconsolata";
+	font-weight: 500;
+}
+
+#main-menu {
+	margin: 100px 0 0 0;
+	padding: 0 25px;
+	width: 200px;
+	height: 70vh;
+	overflow: auto;
+    	white-space: wrap;
+}
+
+#main-menu li {
+	font-size: 1.5rem;
+	text-align: right;
+	position:relative;
+	font-family: "icomoon";
+	font-weight: 500;
+	margin: 5px 2px;
+	transition:all .5s;
+	border-bottom: 1px solid grey;
+	list-style-type: none;
+}
+
+#main-menu li:hover{
+	border-bottom: 1px solid #ff7bac;
+	transition: border-bottom 1s;
+}
+
+#main-menu li a{
+	text-decoration: none;
+	color: grey;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+#main-menu li a:hover{
+	color: #ff7bac;
+}
+
+.sub-menu{
+  display: none;
+  padding: 10px 0;
+}
+
+.expanded{
+  display: block;
+}
+
+#main-menu .sub-menu li{
+	font-size: 1.1rem;
+	font-family: "Inconsolata";
+	font-weight: 300;
+	border: 0;
+}
+
+#main-menu .sub-menu .sub-menu li a{
+	padding-right: 15px;
+}
+	
+
+.nav-menu .social-menu ul{
+	bottom: 25px;
+	right: 60px;
+	align-items: center;
+}
+
+main .menu li{
+	font-size: 1.2rem;
+	font-family: "icomoon";
+	font-weight: 400;
+	margin: 5px 2px;
+	transition:all .5s;
+	list-style-type: none;
+}
+
+
+main .menu li a{
+	text-decoration: none;
+	color: grey;
+	
+}
+
+main .menu li a:hover{
+	color: #ff7bac;
+}
+
+main .menu .sub-menu{
+  display: block;
+  padding: 0 20px;
+  
+}
+
+main .menu .sub-menu li{
+	font-size: 1rem;
+}
+
+.social-menu{
+	line-height: 1;
+}
+
+.social-menu ul{
+	margin: 0;
+	padding: 0;
+	right: 10px;
+	position: absolute;
+	display: flex;
+	padding: 20px 0;
+}
+
+.social-menu ul li{
+	list-style-type: none;
+}
+
+.social-menu ul li a{
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.home main{
+	padding-top: 100vh;
+}
+
+.home .poster{
+	width: 100%;
+	height: 80vh;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.home .poster div{
+	flex-basis: 40%;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.home .poster div .poster-img{
+	width: 100%;
+	height: auto;
+}
+
+.home .poster3 div .poster-img{
+	width: 40%;
+	height: auto;
+}
+
+.home .poster h2{
+	font-size: 3em;
+	font-family: "Lobster";
+	font-weight: 600;
+	margin: 0;
+}
+
+.home .poster p{
+	font-size: 1.1em;
+	font-family: "Raleway";
+	font-weight: 600;
+}
+
+.home .poster a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background-color: #ff7bac;
+	color: white;
+	font-size: 1rem;
+	font-family: "Inconsolata";
+	font-weight: 600;
+}
+
+.home .poster1{
+	background: linear-gradient( to right ,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://healthandbeautyweb.ca/wp-content/uploads/2017/10/health.gif");
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, cover;
+	background-position: center, center; 
+}
+
+.home .poster4{
+	background: linear-gradient( to right ,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://healthandbeautyweb.ca/wp-content/uploads/2017/10/matthew-kane-365718.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, cover;
+	background-position: center, right; 
+}
+
+.poster1 h2, .poster4 h2{
+	color: white;
+	font-size: 4em !important;
+	
+}
+
+.poster1 p, .poster4 p{
+	color: white;
+	font-weight: 600;
+}
+
+.poster1 div, .poster3 div{
+	align-items: center;
+}
+
+.poster1 p, .poster3 p{
+	text-align: center;
+}	
+
+.poster1 p{
+	margin: 10px auto;
+	width: 60%;
+}
+
+.poster2 .poster-img{
+box-shadow: 0 0 20px grey;
+}
+
+
+
+.page main{
+	padding-top: 15vh;
+	z-index: -20;
+}
+
+
+.n2-ss-align {
+    z-index: -20 !important;
+}
+
+.pieChart .main g:nth-of-type(1) path{
+	fill: #dc3912;
+}
+
+.pieChart .main g:nth-of-type(2) path{
+	fill: #ff9900;
+}
+
+.pieChart .main g:nth-of-type(3) path{
+	fill: #109618;
+}
+
+.pieChart .main g text{
+	
+	fill: white;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.page{
+background-color: #f1f1f1;
+}
+
+.page main{
+margin: 10%;
+}
+
+.single main{
+margin: 100px 0;
+}
+
+.productdes{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.productdes h2{
+	flex-basis: 100%;
+	font-family: lobster;
+}
+
+.proddes{
+	background-color: #ff7bac;
+	box-shadow: 10px 10px 5px #999999;
+	color: white;
+	flex-basis: 20%;
+	width: 200px;
+	height: 200px;
+	margin: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 1.2rem;
+	font-family: "Inconsolata";
+	font-weight: 500;
+}
+
+.productdes a{
+	text-decoration: none;
+	color: grey;
+}
+
+.input_item{
+	width: 200px;
+	height: 30px;
+	font-size: 1.2rem;
+	margin: 0;
+	padding-top: 3px;
+}
+
+.search-item a{
+	text-decoration: none;
+	color: grey;
+}
+
+.btn{
+	background-color: #ff7bac;
+	padding: 12px 10px 9px 10px;
+	margin: -5px;
+	color: white;
+}
+
+.panel-grid.panel-no-style{
+	margin-bottom: 0 !important;
+}
+
+#addfood{
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	background: grey;
+	box-shadow: 0 0 10px grey;
+	font-size: 1rem;
+	font-family: "Inconsolata";
+	font-weight: 600;
+	border: 0;
+	margin-top: 10px;
+}
+
+#viewlog{
+	text-decoration: none;
+	padding: 15px;
+	color: white;
+	background: grey;
+	box-shadow: 0 0 10px grey;
+	font-size: 1rem;
+	font-family: "Inconsolata";
+	font-weight: 600;
+	border: 0;
+	margin: 10px 20px;
+}
+
+#itemdes h3{
+	display: inline;
+	margin:0;
+	font-size: 1.5rem;
+	font-family: "Inconsolata";
+	font-weight: 600;
+}
+
+
+#itemdes{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.nutri{
+	display: none;
+	transition: all 1s;
+}
+
+.showDetail{
+	display: block;
+	transition: all 1s;
+}
+
+#foodlog{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.notes{
+	flex-basis:100%;
+	margin: 20px 0;
+	border-bottom: 1px dashed black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: all 1s;
+	}
+	
+	.showNote{
+	flex-basis: 100%;
+	margin: 25px 0;
+	transition: all 1s;
+	
+}
+
+#foodnote{
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.showNote #foodnote{
+	flex-basis: 50%;
+	justify-content: space-between;
+}
+
+.nutri{
+	margin: 10px auto;
+}
+
+#foodnote #h4{
+	width: 60%;
+}
+
+#foodnote h4{
+	font-size: 1.2rem;
+	font-family: "Inconsolata";
+	font-weight: 600;
+	margin: 0;
+	text-align: left;
+}
+
+#detail-btn{
+	text-align: centeflex-basis: 40%;
+}
+
+#detail-btn button{
+	margin: 10px;
+	padding: 4px;
+	background-color: #ff7bac;
+	color: white;
+	font-size: 1rem;
+	font-family: "Inconsolata";
+	font-weight: 600;
+}
+
+#productpage{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 10px;
+}
+
+#productpage article{
+	flex-basis: 15%;
+	margin: 1%;
+	width: 15%;
+	flex-grow: 1;
+	background-color: aliceblue;	
+	box-shadow: 0 0 20px black;
+	padding: 15px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+}
+
+
+#productpage article img{
+	width: 150px;
+	height: auto;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: 10% 30%;
+}
+
+
+#productpage article h2{
+	font-size: 2em;
+	font-family: "Inconsolata";
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+#productpage article h2 a{
+	text-decoration:none;
+	color: #ff7bac;
+}
+
+
+#postpage{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 10px;
+}
+
+#postpage article{
+	flex-basis: 15%;
+	margin: 1%;
+	flex-grow: 1;
+	background-color: aliceblue;	
+	box-shadow: 0 0 20px black;
+	padding: 15px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+}
+
+#postpage article img{
+	width: 250px;
+	height: 250px;;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: 10% 5%;
+}
+
+
+#postpage article h2{
+	font-size: 2em;
+	font-family: "Inconsolata";
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+#postpage article h2 a{
+	text-decoration:none;
+	color: #ff7bac;
+}
+
+.sub-heading{
+	flex-basis: 100%;
+	text-align: center;
+    border-bottom: 2px solid #bbb;
+    line-height: 0;
+    padding: 0;
+    margin: 60px 0 50px 0;
+    color: #ff7bac;
+}
+
+.sub-heading span{
+	background: #f1f1f1;
+	padding: 0 15px;
+	font-size: 2em;
+	font-family: "Lobster";
+	font-weight: 300;
+}
+
+.pi{
+	display: flex;
+	justify-content: space-around;
+}
+
+.pi div{
+	display:flex;
+}
+
+.pi .col{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.pi div:nth-of-type(1) .col{
+	background-color: #dc3912;
+}
+
+.pi div:nth-of-type(2) .col{
+	background-color: #ff9900;
+}
+
+.pi div:nth-of-type(3) .col{
+	background-color: #109618;
+}
+
+.pi p{
+	margin:0 5px;
+}
+
+.pieChart .main g text{
+	display: none;
+}
+
+
+#message{
+	text-align: right;
+}
+
+#message p{
+	color: #ff4bac;
+	font-size: 1.2em;
+	font-family: "Inconsolata";
+	font-weight: 700;
+	transition: all 1s;
+	
+}
+
+.pagebtn{
+	text-decoration: none;
+	color: black;
+	
+	padding: 4px;
+	background-color: #ff7bac;
+	color: white;
+	font-size: 1rem;
+	font-family: "Inconsolata";
+	font-weight: 600;
+}
+
+.divbtn{
+	margin: -200px 0 0 0;
+}
+
+.totalcal h3{
+	font-family: lobster;
+	font-size: 2rem;
+}
+
+.calculator{
+	width: 45%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.calculator .burncal h4{
+	margin:0;
+	padding: 5px;
+	font-size: 1.2rem;
+	font-family: "Inconsolata";
+}
+
+.calculator .burncal{
+	background-color: #ccc;
+}
+
+.calculator .cal{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10px;
+}
+
+.calculator .cal p{
+	font-size: 1rem;
+	font-family: "Inconsolata";
+}
+
+
+/*    --------------------------------        Beauty Pages       -------------------------------------*/
+
+
+
+
+.single-post main>*{
+	padding: 5px 0;
+}
+
+.single-post main p a{
+	color: #00e6e6;
+}
+
+.single-post main h2{
+	color: black;
+	font-size: 3em;
+	font-family: "Lobster";
+	font-weight: 400;
+}
+
+.single-post main h3{
+	color: black;
+	font-size: 1.5em;
+	font-family: "Inconsolata";
+	font-weight: 400;
+}
+
+.single-post main{
+	width: 75%;
+	float: right;
+	background-color: white;
+	margin: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.single-post .attachment-post-thumbnail{
+	left: 0;
+	bottom: 0;
+	position: relative;
+	object-fit: cover;
+	width: 25%;
+	height: auto;
+	position: fixed;
+	z-index: -1;
+	padding: 0;
+
+}
+
+
+.single-post main .navigate a{
+	font-size: 1.5rem;
+	font-family: "Inconsolata";
+	font-weight: 500;
+}
+
+.single-post main p{
+    font-family: "Flamenco";
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+#product-des{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+#branddes{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.prod-des{
+	flex-basis: 20%;
+	width: 20%;
+	height: 480px;
+	flex-grow: 1;
+	background-color: aliceblue;	
+	box-shadow: 0 0 5px black;
+	padding: 10px 5px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.add-cart{
+	background-color: #ff7bac;
+	color: white;
+	height: 30px;
+	width: 150px;
+}
+
+.prod-des h4{
+	color: #ff7bac;
+	font-size: 1.1rem;
+	font-family: "Inconsolata";
+	font-weight: 550;
+}
+
+.prod-des .price{
+	font-size: 1.2rem;
+	font-family: "Flamenco";
+}
+
+.prod-des .image{
+	width: 150px;
+	height: auto;
+}
+
+.prod-des .image img{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: 10% 30%;
+}
+
+
+#color div{
+	width: 40px;
+	height: 40px;
+}
+
+#color{
+	display: flex;
+	height: 40px;
+	align-items: center;
+}
+
+.searchbrand{
+	width: 200px;
+	text-align: center;
+	align-self: flex-end;
+	margin-right: 50px;
+	background-color: #ff7bac;
+	color: white;
+}
+
+.input{
+	height: 30px;
+	margin-right: 5px;
+}
+
+.brandsearch{
+	flex-basis: 50%;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(214, 214, 214);
+	overflow: auto;
+    white-space: nowrap;
+    padding: 15px 0;
+    position: absolute;
+}
+
+.brandsearch a{
+	text-decoration: none;
+	color: #ff7bac;
+	font-size: 1.5rem;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-family: "Inconsolata";
+	font-weight: 600;
+}
+
+.brandsearch a:hover{
+	background-color: white;
+}
+
+.show{
+	display: flex;
+}
+
+#brandheader h1{
+	color: #ff7bac;
+	font-size: calc(2vw + 3em);
+	font-family: "Lobster";
+	font-weight: 400;
+	text-align: center;
+}
+
+#brandheader h2{
+	font-size: 1.5em;
+	font-family: "Flamenco";
+	text-align: center;
+}
+
+.single main{
+margin-top: 100px;
+}
+
+.link{
+width: 40%;
+}
+
+.link a{
+overflow-wrap: break-word;
+}
+
+#food-head{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+flex-direction: row-reverse;
+}
+
+#food-head h3{
+font-family: lobster;
+font-size: 2rem;
+display: inline;
+margin: 20px 0;
+}
+
+#viewnut{
+text-decoration: none;
+padding: 10px;
+color: white;
+background: grey;
+box-shadow: 0 0 10px grey;
+font-size: 1rem;
+font-family: "Inconsolata";
+font-weight: 600;
+border: 0;
+}
+
+
+
+
+@media screen and (max-width: 480px){
+
+	.single-post .attachment-post-thumbnail{
+		display: none;
+	}
+
+	.single-post main{
+		width: 90%;
+	}
+
+	.single-post footer{
+		width: 90%;
+		float: none;
+	}
+
+	.prod-des{
+		flex-basis: 80%;
+		width: 80%;
+		height: 320px;
+	}
+	
+	.showNote{
+		transition: all 1s;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.wp-nutrition-label{
+		width: 15em !important;
+	}
+
+
+
+	
+}
+
+@media screen and (min-width: 480px){
+	.prod-des{
+		flex-basis: 40%;
+		width: 40%;
+		height: 320px;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+
+	.prod-des{
+		flex-basis: 20%;
+		width: 20%;
+		height: 320px;
+	}
+
+	
+
+}
+
+
+
+@media screen and (max-width: 480px){
+	
+	.logo .img1{
+		width: 100%;
+		margin-top: 50px;
+	}
+	.logo .img2{
+		width: 100%;
+		margin-top: 50px;
+	}
+	
+	.sticky .social-menu{
+		display: none;
+	}
+	
+	.sticky .logo .img1{
+		width: 70%;
+		margin-top: 5px;
+	}
+	
+	#foodnote{
+		flex-direction: column;
+	}
+	
+	#foodnote #h4{
+	width: 100% !important;
+	}
+	
+	.home .poster div{
+		flex-basis: 80%;
+		width: 80%;
+	}
+	
+	.home .poster2 div .poster-img{
+		display: none;
+	}
+	
+	.home .poster2 div h2{
+		font-size: 2em;
+	}
+	
+	.poster div{
+		align-items: center;
+	}
+	
+	.poster1 p{
+		margin: 10px auto;
+		width: 100%;
+	}
+	
+	.poster h2{
+		text-align: center;
+	}
+	
+	.calculator{
+		width: 90%;
+	}
+		
+	
+	
+}
